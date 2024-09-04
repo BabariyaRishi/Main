@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-2</title>
+    <style>
+        h1 {
+            background-color: blanchedalmond;
+            text-align: center;
+        }
+
+        p {
+            background-color: aqua;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Q-2 What is Redux Thunk used for?</h1>
+    <br>
+    <p>
+        Redux Thunk is a middleware for Redux that allows you to write action creators that return a function instead of
+        an action object. This is particularly useful for handling asynchronous logic in Redux applications. <br>
+    <h2>Example:-</h2> <br>
+    <p>
+    // A simple thunk action creator that fetches data from an API <br>
+    const fetchData = () => { <br>
+    return (dispatch) => { <br>
+    dispatch({ type: 'FETCH_DATA_REQUEST' }); <br>
+    fetch('https://api.example.com/data') <br>
+    .then(response => response.json()) <br>
+    .then(data => dispatch({ type: 'FETCH_DATA_SUCCESS', payload: data })) <br>
+    .catch(error => dispatch({ type: 'FETCH_DATA_FAILURE', error })); <br>
+    }; <br>
+    };
+</p>
+
+    </p>
+</body>
+
+</html>

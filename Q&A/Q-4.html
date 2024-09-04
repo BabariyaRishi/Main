@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-4</title>
+    <style>
+        h1 {
+            background-color: blanchedalmond;
+            text-align: center;
+        }
+
+        p {
+            background-color: aqua;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Q-4 What is the second argument that can optionally be passed tosetState and what is
+        its purpose?</h1>
+    <br>
+    <p>
+        In React.js, the setState function accepts two arguments: <br>
+
+        The first argument is the new state or a function that returns the new state, which React will merge with the
+        current state. <br>
+
+        The second argument is an optional callback function that will be executed after the state has been updated and
+        the component has re-rendered. This callback is often used when you need to perform an action immediately after
+        the state has been updated, such as interacting with the DOM or triggering an event that depends on the updated
+        state. <br>
+    </p>
+        <h2>Example:-</h2> <br>
+        <p>
+        this.setState({ count: this.state.count + 1 }, () => { <br>
+            console.log("State updated and component re-rendered."); <br>
+          });
+        </p>  
+    
+</body>
+
+</html>

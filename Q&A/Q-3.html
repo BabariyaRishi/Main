@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-3</title>
+    <style>
+        h1 {
+            background-color: blanchedalmond;
+            text-align: center;
+        }
+
+        p {
+            background-color: aqua;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Q-3 What is Pure Component? When to use Pure Component over Component?</h1>
+    <br>
+    <p>In React, a Pure Component is a type of component that implements the shouldComponentUpdate lifecycle method by
+        performing a shallow comparison of the component's props and state. This means that if the props or state of the
+        component do not change, the component will not re-render. The primary benefit of using PureComponent is
+        performance optimization, as it can prevent unnecessary re-renders of components.</p> <br>
+    
+    <h2>When to Use PureComponent</h2>
+    <p>
+    1)Performance Optimization: <br> Use PureComponent when you want to optimize performance by preventing unnecessary
+    re-renders. This is particularly useful in scenarios where the component receives frequent updates, but the props or
+    state remain the same. <br><br>
+
+    2)Shallow Comparisons: <br> Use PureComponent when your component's props and state are simple data structures
+    (e.g., primitives or shallow objects). If the component's props or state include complex, deeply nested objects,
+    PureComponent may not behave as expected because it only performs shallow comparisons. <br><br>
+
+    3)Functional Components: <br> For functional components, you can achieve similar optimization using React.memo,
+    which works like PureComponent by memoizing the component and skipping re-renders if props do not change. <br>
+    </p>
+</body>
+
+</html>
